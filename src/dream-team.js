@@ -6,5 +6,6 @@ module.exports = function createDreamTeam(members) {
       if(members[i].toString()[0] == members[i].toString()[0].toUpperCase())
       team += members[i].toString()[0];
     }
+    team.sort().join("");
     return team;
 };
