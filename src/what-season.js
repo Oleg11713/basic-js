@@ -4,6 +4,9 @@ module.exports = function getSeason(date) {
   if(!data) {
     return 'Unable to determine the time of year!';
   }
+  if( isNaN(date.getTime())){  
+    throw new Error();
+  }
   let month = date.getMonth();
   let season = "";
   if (month >= 0 && month <= 1 || month == 11){
