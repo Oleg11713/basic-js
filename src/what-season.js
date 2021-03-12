@@ -5,7 +5,7 @@ if (!data || data === undefined) {
     return 'Unable to determine the time of year!';
   }
   if (isNaN(date.getTime())){  
-    throw new Error();
+    throw new Error('THROWN');
   }
   let month = date.getMonth();
   if ((month >= 0 && month <= 1) || month == 11){
